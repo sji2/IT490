@@ -1,0 +1,7 @@
+Busque que recitales hay en NYC
+Estilo de musica como Jazz, country y asome todos los bares
+Una aplicacion con base de datos que este todo acutalizado con todos los lugares
+
+Una base de datos para aspirantes de universidades, alguien que quiera estudiar algo y en la aplication que pase informationes de ese lugar.. con carreras, precios y cosas asi
+
+
