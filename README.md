@@ -2,7 +2,7 @@
 
 Systems Integrations Project
 
-Members: Keving and Santiago
+Members: Kevin and Santiago
 
 Topic: TBD
 
