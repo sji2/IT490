@@ -1,0 +1,5 @@
+git add *File/Folder/Money?
+git status
+git commit -m "push message"
+git push -u origin master
+
