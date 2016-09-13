@@ -4,4 +4,6 @@ Una aplicacion con base de datos que este todo acutalizado con todos los lugares
 
 Una base de datos para aspirantes de universidades, alguien que quiera estudiar algo y en la aplication que pase informationes de ese lugar.. con carreras, precios y cosas asi
 
+A search engine to find updated lists of live shows in NYC. We can filter these options by date of shows, genre and specific location in NYC.
 
+A search engine to find the best universities for your major. Simply showing the whole information about the universities, including costs.
