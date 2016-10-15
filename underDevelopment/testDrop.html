@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<style>
+    label 
+    { 
+        float: center; 
+        
+        width: 200px;
+    }
+
+/*  
+	background: #ffff00;
+
+	legend 
+    {
+        display: block;
+        padding-left: 100px;
+        padding-right: 100px;
+     }
+  	fieldset 
+  	{
+            width: 750px;
+    }
+	textarea 
+	{
+	width: 150px;
+	resize: vertical;
+	}*/
+</style>
+
+
+
+<head>
+	<title> Dropdown </title>
+</head>
+<body>
+
+		
+
+		<label for="carMake">Make</label>
+			<select id="carMake" name="carMake">
+			<option value="">
+               Please select
+            </option><!-- ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="ACURA">
+                ACURA
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="ALFA ROMEO">
+                ALFA ROMEO
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="AUDI">
+                AUDI
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="BMW">
+                BMW
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="BUICK">
+                BUICK
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="CADILLAC">
+                CADILLAC
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="CHEVROLET">
+                CHEVROLET
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="CHRYSLER">
+                CHRYSLER
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="DODGE">
+                DODGE
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="FIAT">
+                FIAT
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="FORD">
+                FORD
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="GLOBAL ELECTRIC MOTORS">
+                GLOBAL ELECTRIC MOTORS
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="GMC">
+                GMC
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="HONDA">
+                HONDA
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="HYUNDAI">
+                HYUNDAI
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="INFINITI">
+                INFINITI
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="JAGUAR">
+                JAGUAR
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="JEEP">
+                JEEP
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="KIA">
+                KIA
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="LAND ROVER">
+                LAND ROVER
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="LEXUS">
+                LEXUS
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="LINCOLN">
+                LINCOLN
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="MAZDA">
+                MAZDA
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="MCLAREN AUTOMOTIVE">
+                MCLAREN AUTOMOTIVE
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="MERCEDES-BENZ">
+                MERCEDES-BENZ
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="MINI">
+                MINI
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="MITSUBISHI">
+                MITSUBISHI
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="NISSAN">
+                NISSAN
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="PORSCHE">
+                PORSCHE
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="RAM">
+                RAM
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="SMART">
+                SMART
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="SUBARU">
+                SUBARU
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="TESLA">
+                TESLA
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="TOYOTA">
+                TOYOTA
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="VOLKSWAGEN">
+                VOLKSWAGEN
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+            <option class="ng-binding ng-scope" value="VOLVO">
+                VOLVO
+            </option><!-- end ngRepeat: make in vehicleMakes -->
+				
+			</select>
+		<br>
+		<br>
+
+		<label for="carModel">Model</label>
+			<select id="carModel" name="carModel">
+				<option> </option>
+				<option value="Camry"> Camry </option>
+				
+			</select>
+		<br>
+		<br>
+
+		<label for="carYear">Year</label>
+			<select id="carYear" name="carYear">			
+			<option value="">
+                Please select
+            </option><!-- ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="2017">
+                2017
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="2016">
+                2016
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="2015">
+                2015
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="2014">
+                2014
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="2013">
+                2013
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="2012">
+                2012
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="2011">
+                2011
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="2010">
+                2010
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="2009">
+                2009
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="2008">
+                2008
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="2007">
+                2007
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="2006">
+                2006
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="2005">
+                2005
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="2004">
+                2004
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="2003">
+                2003
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="2002">
+                2002
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="2001">
+                2001
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="2000">
+                2000
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="1999">
+                1999
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="1998">
+                1998
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="1997">
+                1997
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="1996">
+                1996
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="1995">
+                1995
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="1994">
+                1994
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="1993">
+                1993
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="1992">
+                1992
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="1991">
+                1991
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="1990">
+                1990
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="1989">
+                1989
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="1988">
+                1988
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="1987">
+                1987
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="1986">
+                1986
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="1985">
+                1985
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="1984">
+                1984
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="1983">
+                1983
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="1982">
+                1982
+            </option><!-- end ngRepeat: year in vehicleYears -->
+            <option class="ng-binding ng-scope" value="1981">
+                1981
+            </option><!-- end ngRepeat: year in vehicleYears -->
+				
+			</select>
+		<br>
+		<br>
+
+		<input type="submit" name="submit" value="Submit Idiot!" >
+		
+</body>
+</html>

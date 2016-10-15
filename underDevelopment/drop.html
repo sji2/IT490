@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<style>
+    label 
+    { 
+        float: left; 
+        background: #ffff00;
+        width: 200px;
+    }
+  	legend 
+    {
+        display: block;
+        padding-left: 100px;
+        padding-right: 100px;
+     }
+  	fieldset 
+  	{
+            width: 750px;
+    }
+	textarea 
+	{
+	width: 150px;
+	resize: vertical;
+	}
+</style>
+
+<script>
+	
+		function validate() 
+	{
+
+		password1 = document.getElementById("userPassword");
+		password2 = document.getElementById("confirmPassword");
+		
+		//Check matching passwords
+		if (password1.value == password2.value) 
+		{
+			document.getElementById("errorPassMsg").innerHTML = "";
+			document.getElementById("confirmPassword").style.background = "white";
+			return true;
+		}
+		else 
+		{
+			alert("The passwords do not match");
+			document.getElementById("errorPassMsg").innerHTML = "&nbsp;The passwords do not match";
+			document.getElementById("confirmPassword").style.background = "red";
+			return false;
+		}
+		
+	}
+
+		function validateAddress()
+		{
+		//Check address format
+			if (document.getElementById("userStreetAddress").value.match("^[a-zA-Z0-9-,\. ]+$")) 
+			{
+				document.getElementById("errorAddressMsg").innerHTML = "";
+				return true;				
+			}
+			else 
+			{
+				document.getElementById("errorAddressMsg").innerHTML = "&nbsp;Invalid Street Address";
+				document.getElementById("userStreetAddress").style.background = "red";
+				alert("Invalid Street Address");
+				return false;
+			}
+		}
+
+		function validateZipCode()
+		{
+		// Verify Zip Code Field
+			if (document.getElementById("userZipCode").value.match("^[0-9]{5}(?:-[0-9]{4})?$")) 
+			{
+				document.getElementById("errorZipCodeMsg").innerHTML = "";
+				return true;	
+			}
+			else {
+				document.getElementById("errorZipCodeMsg").innerHTML = "&nbsp;Invalid Zip Code";
+				document.getElementById("userZipCode").style.background = "red";
+				alert("Invalid Zip Code");
+				return false;
+			}
+		}
+
+</script>
+
+	
+<form action="register.php">
+
+<legend> Registration Form </legend>
+
+	<fieldset>	
+
+		<label for = "userName"> User Name </label>
+		<input id="userName" required="required" type="text" name="userName" autofocus>
+		<br>
+		<br>
+		
+		<label for="userPassword"> User Password </label>
+		<input id="userPassword" required="required" type="password" name="userPassword" autocomplete="off">
+		<br>
+		</br>
+		
+		<label for="confirmPassword">Confirm Password</label>
+		<input id="confirmPassword" required="required" type="password" name="confirmPassword" onblur="validate()"; return false; autocomplete="off">
+		<span id="errorPassMsg"></span>
+		<br>
+		</br>
+		
+		<label for="userEmail">User Email</label>
+		<input id="userEmail" required="required" type="text" name="userEmail">
+		<input id="mailRequest" type="checkbox" name="mailRequest"><span>&nbsp email a copy?</span>
+		<br>
+		<br>
+		
+		<label for="userFullName">User Full Name</label>
+		<input id="userFullName" required="required" type="text" name="userFullName">
+		<br>
+		<br>
+		
+		<label for="userPhone">User Phone</label>
+		<input id="userPhone" required="required" type="text" name="userPhone">
+		<br>
+		<br>
+		
+		<label for="userMajor">User Major</label>
+		<input id="userMajor" required="required" type="text" name="userMajor">
+		<br>
+		<br>
+		
+		<fieldset>
+			<label for="userTown">Town</label>
+			<select id="userTown" name="userTown">
+				<option> </option>
+				<option value="Camden"> Camden </option>
+				<option value="Elizabeth"> Elizabeth </option>
+				<option value="Edison"> Edison </option>
+				<option value="Fort Lee"> Fort Lee </option>
+				<option value="Jersey City"> Jersey City </option>
+				<option value="Newark"> Newark </option>
+				<option value="Paterson">Paterson</option>
+				<option value="Trenton"> Trenton </option>
+				<option value="Wayne"> Wayne </option>
+				<option value="Woodbridge"> Woodbridge </option>
+			</select>
+		<br>
+		<br>
+			
+			<label for="userStreetAddress">Street Address</label>
+			<textarea id="userStreetAddress" name="userStreetAddress"
+					 onblur="validateAddress()"; 
+					 required></textarea>
+			<span id="errorAddressMsg"></span>
+		<br>
+		<br>
+
+			<label for="userState">State</label>
+			<select name="userState" id="userState">
+					<option> </option>
+					<option value="AL">Alabama</option>
+					<option value="AK">Alaska</option>
+					<option value="AZ">Arizona</option>
+					<option value="AR">Arkansas</option>
+					<option value="CA">California</option>
+					<option value="CO">Colorado</option>
+					<option value="CT">Connecticut</option>
+					<option value="DE">Delaware</option>
+					<option value="DC">District of Columbia</option>
+					<option value="FL">Florida</option>
+					<option value="GA">Georgia</option>
+					<option value="HI">Hawaii</option>
+					<option value="ID">Idaho</option>
+					<option value="IL">Illinois</option>
+					<option value="IN">Indiana</option>
+					<option value="IA">Iowa</option>
+					<option value="KS">Kansas</option>
+					<option value="KY">Kentucky</option>
+					<option value="LA">Louisiana</option>
+					<option value="ME">Maine</option>
+					<option value="MD">Maryland</option>
+					<option value="MA">Massachusetts</option>
+					<option value="MI">Michigan</option>
+					<option value="MN">Minnesota</option>
+					<option value="MS">Mississippi</option>
+					<option value="MO">Missouri</option>
+					<option value="MT">Montana</option>
+					<option value="NE">Nebraska</option>
+					<option value="NV">Nevada</option>
+					<option value="NH">New Hampshire</option>
+					<option value="NJ">New Jersey</option>
+					<option value="NM">New Mexico</option>
+					<option value="NY">New York</option>
+					<option value="NC">North Carolina</option>
+					<option value="ND">North Dakota</option>
+					<option value="OH">Ohio</option>
+					<option value="OK">Oklahoma</option>
+					<option value="OR">Oregon</option>
+					<option value="PA">Pennsylvania</option>
+					<option value="RI">Rhode Island</option>
+					<option value="SC">South Carolina</option>
+					<option value="SD">South Dakota</option>
+					<option value="TN">Tennessee</option>
+					<option value="TX">Texas</option>
+					<option value="UT">Utah</option>
+					<option value="VT">Vermont</option>
+					<option value="VA">Virginia</option>
+					<option value="WA">Washington</option>
+					<option value="WV">West Virginia</option>
+					<option value="WI">Wisconsin</option>
+					<option value="WY">Wyoming</option>
+				</select>
+			<br>
+			<br>
+				<label for="userZipCode">Zip Code</label>
+				<input type="text" id="userZipCode" name="userZipCode" 
+						onblur="validateZipCode();" required/>
+				<span id="errorZipCodeMsg"></span>
+
+		</fieldset>
+
+
+		<input type="submit">
+
+	</fieldset>
+</form>
+</html>
